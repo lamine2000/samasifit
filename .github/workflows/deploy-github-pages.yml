@@ -29,12 +29,10 @@ jobs:
 
     - name: Create Docs Structure
       run: |
-        ls dist/
         mkdir docs/
-        ls
         mkdir docs/scripts/
-        ls docs
         mkdir docs/styles/
+        ls ./dist
         mv dist/*.html docs/
         mv dist/*.css docs/styles/
         mv dist/*.js docs/scripts/
