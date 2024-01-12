@@ -45,4 +45,5 @@ jobs:
         git add -A
         git commit -m "Deploy to GitHub Pages"
         git push https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+        # done!
       if: success()
