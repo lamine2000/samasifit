@@ -29,11 +29,17 @@ jobs:
 
     - name: Create Docs Structure
       run: |
+        echo "1"
         mkdir docs/
+        echo "2"
         mkdir docs/scripts/
+        echo "3"
         mkdir docs/styles/
+        echo "4"
         ls ./dist
+        echo "5"
         mv dist/*.html docs/
+        echo "6"
         mv dist/*.css docs/styles/
         mv dist/*.js docs/scripts/
       if: success()
