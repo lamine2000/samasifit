@@ -32,10 +32,12 @@ jobs:
         mkdir docs/
         mkdir docs/scripts/
         mkdir docs/styles/
-        ls ./dist
-        # mv dist/*.html docs/
-        # mv dist/*.css docs/styles/
-        # mv dist/*.js docs/scripts/
+        cd dist/samasifit
+        ls
+        pwd
+        # mv *.html docs/
+        # mv *.css docs/styles/
+        # mv *.js docs/scripts/
       if: success()
 
     - name: Commit and Push to Docs
