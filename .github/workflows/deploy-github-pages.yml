@@ -29,11 +29,11 @@ jobs:
 
     - name: Create Docs Structure
       run: |
-        ls
-        cd samasifit/
-        ls
+        ls dist/
         mkdir docs/
+        ls
         mkdir docs/scripts/
+        ls docs
         mkdir docs/styles/
         mv dist/*.html docs/
         mv dist/*.css docs/styles/
