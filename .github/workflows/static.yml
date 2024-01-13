@@ -44,7 +44,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: ng build --base-href "http://samasifit.com/"
+        run: ng build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
