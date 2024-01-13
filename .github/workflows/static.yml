@@ -49,17 +49,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Create Docs Structure
-        run: |
-          rm -r docs/
-          mkdir docs/
-          mv dist/samasifit/* docs/
-        if: success()
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs'
+          path: 'dist/samasifit'
 
       - name: Deploy to GitHub Pages
         id: deployment
