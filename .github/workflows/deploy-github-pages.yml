@@ -30,6 +30,7 @@ jobs:
     - name: Create Docs Structure
       run: |
         rm -r docs/
+        mkdir -p docs/
         cd dist/samasifit/
         mv * ../../docs/
       if: success()
