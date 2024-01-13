@@ -29,9 +29,8 @@ jobs:
 
     - name: Create Docs Structure
       run: |
-        mkdir docs/
-        mkdir docs/scripts/
-        mkdir docs/styles/
+        mkdir -p docs/scripts/
+        mkdir -p docs/styles/
         cd dist/samasifit
         mv *.html ../../docs/
         mv *.css ../../docs/styles/
