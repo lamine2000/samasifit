@@ -44,7 +44,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: ng build --base-href "https://samasifit.com/"
+        run: ng build --base-href "https://lamine2000.github.io"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
