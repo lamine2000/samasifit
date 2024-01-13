@@ -44,13 +44,14 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: ng build --base-href "https://lamine2000.github.io"
+        run: ng build --base-href "https://lamine2000.github.io/samasifit"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+
         with:
           path: 'dist/samasifit'
 
