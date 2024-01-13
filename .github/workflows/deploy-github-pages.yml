@@ -25,14 +25,13 @@ jobs:
       run: npm install
 
     - name: Build Angular App
-      run: ng build --base-href "https://samasifit.com/"
+      run: ng build --base-href "https://www.samasifit.com/"
 
     - name: Create Docs Structure
       run: |
         rm -r docs/
-        mkdir -p docs/
-        cd dist/samasifit/
-        mv * ../../docs/
+        mkdir docs/
+        mv dist/samasifit/* docs/
       if: success()
 
     - name: Commit and Push to Docs
