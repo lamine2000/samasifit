@@ -30,12 +30,9 @@ jobs:
     - name: Create Docs Structure
       run: |
         rm -r docs/
-        mkdir -p docs/scripts/
-        mkdir -p docs/styles/
-        cd dist/samasifit
-        mv *.html ../../docs/
-        mv *.css ../../docs/styles/
-        mv *.js ../../docs/scripts/
+        mkdir -p docs/
+        cd dist/samasifit/
+        mv * ../../docs/
       if: success()
 
     - name: Commit and Push to Docs
