@@ -3,15 +3,15 @@
   <mat-step [stepControl]="personalInfoGroup">
     <form [formGroup]="personalInfoGroup">
       <ng-template matStepLabel>Qui suis-je ?</ng-template>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>Prénom</mat-label>
         <input matInput placeholder="Prénom" formControlName="firstNameCtrl" required #firstName>
       </mat-form-field>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>Nom</mat-label>
         <input matInput placeholder="Nom" formControlName="lastNameCtrl" required #lastName>
       </mat-form-field>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>Âge</mat-label>
         <input matInput type="number" max="100" min="0" step="1" placeholder="Age" formControlName="ageCtrl" required>
       </mat-form-field>
@@ -24,15 +24,15 @@
   <mat-step [stepControl]="contactInfoGroup" state="phone">
     <form [formGroup]="contactInfoGroup">
       <ng-template matStepLabel>Comment me contacter ?</ng-template>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>Téléphone</mat-label>
         <input matInput placeholder="Numéro de Téléphone" formControlName="phoneNumberCtrl" required>
       </mat-form-field>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>Email</mat-label>
         <input matInput type="email" placeholder="Adresse" formControlName="adressCtrl">
       </mat-form-field>
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>Adresse</mat-label>
         <input matInput placeholder="Adresse" formControlName="adressCtrl">
       </mat-form-field>
