@@ -33,6 +33,6 @@ export class AppComponent {
 
   contactInfoGroup = this._formBuilder.group({
     phoneNumberCtrl: ['', Validators.pattern("^\\+?[0-9]+(\\s[0-9]+)*$")],
-    adressCtrl: ['', Validators.email],
+    addressCtrl: ['', Validators.email],
   });
 }
