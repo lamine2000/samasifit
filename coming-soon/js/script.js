@@ -64,4 +64,31 @@ form.addEventListener('submit', (e) => {
   keepInTouch.id = 'hidden';
 
   form.style.display = 'none';  // Hide the form
+
+  const name = document.querySelector('input[id="name"]').value;
+  const age = document.querySelector('input[id="age"]').value;
+  const email = document.querySelector('input[id="email"]').value;
+  const phoneNumber = document.querySelector('input[id="phoneNumber"]').value;
+  const address = document.querySelector('input[id="address"]').value;
+
+  // Define template parameters
+  const templateParams = {
+    name: name,
+    age: age,
+    email: email,
+    phoneNumber: phoneNumber,
+    address: address,
+    message: `New user submission: Name: ${name}, Age: ${age}, Email: ${email}, Phone: ${phoneNumber}, Address: ${address}`
+  };
+
+  console.log(templateParams);
+  //send email
+  emailjs.send('service_ye195wg', 'template_ikkl8ld', templateParams)
+    .then(function() {
+      console.log('SUCCESS!');
+      // Optionally show a success message or redirect
+    }, function(error) {
+      console.error('FAILED...', error);
+      // Optionally handle the error
+    });
 });
