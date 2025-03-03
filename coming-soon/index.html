@@ -20,6 +20,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="css/util.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <style>
     /* Apply the Poppins font to the entire page */
@@ -92,7 +93,7 @@
           <h2
             class="mb-3"
             style="
-          font-size: 2rem;
+          font-size: 2.2rem;
           font-weight: 700;
           color: #bbaaff;
         "
@@ -129,11 +130,55 @@
       </div>
     </div>
 
-    <!-- Call-to-Action Button with Emoji -->
-    <a href="#contact" class="btn btn-primary btn-lg mt-4">
-      Get Started <span style="font-size:1.2em;">💪</span>
-    </a>
   </div>
+
+  <div class="container">
+    <h1 class="keepInTouch">Let's keep in touch !</h1>
+    <h1 class="confirmationMessage">Thanks, Samasi Fitness will contact you very soon !</h1>
+    <p class="wannaKnowMore"
+      style="
+          font-size: 1.125rem;
+          line-height: 1.5;
+          color: #e0e0e0;
+        "
+    >
+      Still Want to Know More ?
+      <br>
+      Watch the video below to discover the mind and body behind Samasi Fitness !
+      <br>
+      <br>
+      <span class="videoContainer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6FIL3wTm9AA?si=UudFPAmCKwXKpx-x&amp;start=106" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </span>
+    </p>
+
+    <form id="multiStepForm">
+      <!-- Step 1 -->
+      <div class="form-step form-step-active">
+        <h2>Personal Information</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Saran Sidibe" required />
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="24" required />
+        <button type="button" class="btn-next">Next</button>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step">
+        <h2>Contact Information</h2>
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" placeholder="79393964" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="sidibesaran00@gmail.com" required />
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Bamako, ..." />
+        <button type="button" class="btn-prev">Previous</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
 
   <!-- Social Icons -->
   <div class="flex-w flex-c-m p-b-35" style="z-index: 2;">

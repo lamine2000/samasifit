@@ -1,0 +1,130 @@
+.container {
+  max-width: 450px;
+  margin: auto;
+  background-color: rgba(38, 38, 38, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #bbaaff;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Label Styles */
+label {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+  color: #e0e0e0;
+  font-size: 0.9em;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #bbaaff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  background-color: #ebebeb;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #bbaaff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  width: 100%;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Next and Submit Buttons */
+button.btn-next, button[type="submit"] {
+  background-color: #28a745;
+}
+
+button.btn-next:hover, button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Previous Button */
+button.btn-prev {
+  background-color: #bbaaff;
+  margin-bottom: 20px;
+}
+
+button.btn-prev:hover {
+  background-color: #0056b3;
+}
+
+/* Confirmation Message */
+#confirmationMessage {
+  text-align: center;
+  background-color: #e6ffe6;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #28a745;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#confirmationMessage:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Step Display */
+.form-step {
+  display: none;
+}
+
+.form-step-active {
+  display: block;
+}
+
+/* Hidden Element */
+.hidden {
+  display: none;
+}
+
+.container h2 {
+  color: #e0e0e0;
+}
+
+#hidden {
+  display: none;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100% !important;
+}
